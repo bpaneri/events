@@ -1,68 +1,392 @@
-<!DOCTYPE html>
-<html >
-<head>
-  <meta charset="UTF-8">
-  <title>jQuery Checkbox Filter</title>
-	<link rel="stylesheet" href="style2.css">
- 
-</head>
-
-<body>
-  <div class="container">
-  <div class="filter-block">
-  <section class="col-xs-12 filter">
-      <form class="form-horizontal" action="">
-        <div id="sticker" class="col-sm-6 form-group tags categories">
-          <h2>Filter by Therapy</h2>
-		  <div class="category_checkbox">
-          <div class="checkbox"><label><input type="checkbox" rel="category-one"/> TMS</label></div>
-		  <div class="checkbox"><label><input type="checkbox" rel="category-six"/> DBS & SCS</label></div>		  
-		  <div class="checkbox"><label><input type="checkbox" rel="category-seven"/> ECT</label></div>
-          <div class="checkbox"><label><input type="checkbox" rel="category-two"/> tDCS & tACS</label></div>          <div class="checkbox"><label><input type="checkbox" rel="category-eight"/> EEG/Neurofeedback</label></div>		  
-          </div>
-		</div>
-      </form>
-	</section>
-	<section class="col-xs-12 filter">
-      <form class="form-horizontal" action="">
-        <div id="sticker" class="col-sm-6 form-group tags categories">
-          <h2>Filter by Event Type</h2>
-		  <div class="category_checkbox">
-          <div class="checkbox"><label><input type="checkbox" rel="category-three"/> Workshop/Course</label></div>
-          <div class="checkbox"><label><input type="checkbox" rel="category-four"/> Conference</label></div>
-		  <div class="checkbox"><label><input type="checkbox" rel="category-five"/> Seminar</label></div>
-          </div>
-		</div>
-      </form>
-	</section>
-    </div>
-
-  
-  <div class="no-padding grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": ".col-sm-6" }'>			<section class="grid-item col-sm-6 box" id="category-twelve">      <ul class="results list-unstyled">        <h3>September 2019</h3>
-<li class="category-one    category-two category-three  category-eight"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://www.ru.nl/donders/agenda/donders-tool-kits/vm-tool-kits/donders-brain-stimulation-tool-kit-version-2/">Donders Brain Stimulation Toolkit</a></div><div class='column2'>Nijmegen, Netherlands</div><div class='column3'> Sep. 9-12, 2019</div></div></table></li>
-<li class="      category-four "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://minnesota.devicetalks.com/">DeviceTalks </a></div><div class='column2'>Minnesota, MN, USA</div><div class='column3'> Sept. 9-10, 2019</div></div></table></li><li class="     category-three category-eight"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromodec.com/events/neurofeedback-in-adhd-and-insomnia-4-day-course-2/">Neurofeedback in ADHD and insomnia: 4-day course</a></div><div class='column2'>Munich, Germany</div><div class='column3'> Sep. 10-13, 2019</div></div></table></li><li class="category-one  category-six  category-two  category-four category-eight"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromodec.com/events/crania-conference-2019/">CRANIA Conference 2019</a></div><div class='column2'>Toronto, Canada</div><div class='column3'> Sep. 16, 2019</div></div></table></li>
-<li class="category-one  category-six    category-four "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="http://www.epns2019.org/neuromodulation-symposium">3rd EPNS International Advances in Neuromodulation in Children Symposium</a></div><div class='column2'>Athens, Greece</div><div class='column3'> Sep. 16-17, 2019</div></div></table></li>
-<li class="     category-three category-four category-eight"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromodec.com/events/ii-latin-american-workshop-on-computational-neuroscience/">II Latin American Workshop on Computational Neuroscience</a></div><div class='column2'>São João del-Rei, MG, Brazil</div><div class='column3'> Sep. 18-20, 2019</div></div></table></li><li class="    category-two category-three  category-eight"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="http://forms.neuroelectrics.com/workshop">Hands On Workshop EEG & Brain Stimulation</a></div><div class='column2'>Barcelona, Spain</div><div class='column3'> Sep. 19-20, 2019</div></div></table></li><li class="      category-four "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://cme2019.ifado.de/index.php">The 13th CME International Conference on Complex Medical Engineering (CME 2019)</a></div><div class='column2'>Westfalenhallen, Germany</div><div class='column3'> Sept. 23-25, 2019</div></div></table></li><li class="     category-three category-eight"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromodec.com/events/neurofeedback-in-adhd-and-insomnia-4-day-course-3/">Neurofeedback in ADHD and insomnia: 4-day course</a></div><div class='column2'>Nijmegen, Netherlands </div><div class='column3'> Sep. 24-27, 2019</div></div></table></li><li class="    category-two category-three  category-eight"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="http://forms.neuroelectrics.com/workshop">Hands On Workshop EEG & Brain Stimulation</a></div><div class='column2'>Boston, MA, USA</div><div class='column3'> Sep. 26-27, 2019</div></div></table></li>		<li class="category-one    category-two  category-four"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://brainbox.rogue-resolutions.com/bbiconf2019/">The BrainBox Initiative Conference 2019</a></div><div class='column2'>London, UK</div><div class='column3'> Sep. 26-27, 2019</div></div></table></li><li class="category-one     category-three  "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://magandmore.com/en/brain-stimulation-bavarian-style/">Brain Stimulation Bavarian Style</a></div><div class='column2'>Munich, Germany</div><div class='column3'> Sept. 29-30, 2019</div></div></table></li><li class="   category-one  category-six  category-seven category-two category-three category-four category-five category-eight "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="#"></a></div><div class='column2'></div><div class='column3'> </div></div></table></li>      </ul>    </section>			<section class="grid-item col-sm-6 box" id="category-thirteen">      <ul class="results list-unstyled">        <h3>October 2019</h3>
+<!DOCTYPE html>
+
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>jQuery Checkbox Filter</title>
+
+	<link rel="stylesheet" href="style2.css">
+
+ 
+
+</head>
+
+
+
+<body>
+
+  <div class="container">
+
+  <div class="filter-block">
+
+  <section class="col-xs-12 filter">
+
+      <form class="form-horizontal" action="">
+
+        <div id="sticker" class="col-sm-6 form-group tags categories">
+
+          <h2>Filter by Therapy</h2>
+
+		  <div class="category_checkbox">
+
+          <div class="checkbox"><label><input type="checkbox" rel="category-one"/> TMS</label></div>
+
+		  <div class="checkbox"><label><input type="checkbox" rel="category-six"/> DBS & SCS</label></div>		  
+
+		  <div class="checkbox"><label><input type="checkbox" rel="category-seven"/> ECT</label></div>
+
+          <div class="checkbox"><label><input type="checkbox" rel="category-two"/> tDCS & tACS</label></div>
+
+          <div class="checkbox"><label><input type="checkbox" rel="category-eight"/> EEG/Neurofeedback</label></div>		  
+          </div>
+
+		</div>
+
+      </form>
+
+	</section>
+
+	<section class="col-xs-12 filter">
+
+      <form class="form-horizontal" action="">
+
+        <div id="sticker" class="col-sm-6 form-group tags categories">
+
+          <h2>Filter by Event Type</h2>
+
+		  <div class="category_checkbox">
+
+          <div class="checkbox"><label><input type="checkbox" rel="category-three"/> Workshop/Course</label></div>
+
+          <div class="checkbox"><label><input type="checkbox" rel="category-four"/> Conference</label></div>
+
+		  <div class="checkbox"><label><input type="checkbox" rel="category-five"/> Seminar</label></div>
+
+          </div>
+
+		</div>
+
+      </form>
+
+	</section>
+
+    </div>
+
+
+
+  
+
+  <div class="no-padding grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": ".col-sm-6" }'>
+
+	
+	
+	<section class="grid-item col-sm-6 box" id="category-thirteen">
+
+      <ul class="results list-unstyled">
+
+        <h3>October 2019</h3>
 <li class="      category-four "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://www.smr.org.uk/Meetings/20191001/">Bioelectronic Medicine symposium</a></div><div class='column2'>London, UK</div><div class='column3'> Oct. 1, 2019</div></div></table></li>
-<li class="      category-four "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="http://events.marketsandmarkets.com/5th-Annual-MarketsandMarkets-Neuroscience-RD-Technologies-Conference">5th Annual MarketsandMarkets Neuroscience R&D Technologies Conference</a></div><div class='column2'>London, UK</div><div class='column3'> Oct. 3-4, 2019</div></div></table></li><li class="category-one  category-six category-seven category-two category-three category-four category-eight"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://www.neuromodec.com/ntsnycn2019/">2019 Neuromodulation: the Science & NYC Neuromodulation Joint Meeting</a></div><div class='column2'>Napa, CA, USA</div><div class='column3'> Oct. 3-6, 2019</div></div></table></li>				<li class="category-one     category-three "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromodec.com/events/rtms-for-depression-ocd-and-new-developments-2-day-rtms-course-6/">rTMS for depression, OCD and new developments: 2-day rTMS course</a></div><div class='column2'>Nijmegen, Netherlands </div><div class='column3'> Oct. 3-4, 2019</div></div></table></li><li class="  category-six    category-four "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromodec.com/events/2019-the-art-and-science-of-pain-management-conference/">2019 The Art and Science of Pain Management Conference</a></div><div class='column2'>Saratoga Springs, NY, USA</div><div class='column3'> Oct. 5, 2019</div></div></table></li><li class="    category-two category-three  category-eight"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://www.tickettailor.com/events/schoolofneurotherapy/166772/">NeuroField Neuromodulation All-Levels Training</a></div><div class='column2'>Victoria, BC Canada</div><div class='column3'> Oct. 14-19</div></div></table></li><li class="     category-three  category-eight"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromodec.com/events/neurofeedback-in-adhd-and-insomnia-4-day-course-4/">Neurofeedback in ADHD and insomnia: 4-day course</a></div><div class='column2'>Sydney, Australia</div><div class='column3'> Oct. 18-21, 2019</div></div></table></li>		<li class="category-one     category-three "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://psychiatry.duke.edu/transcranial-magnetic-stimulation-course">Duke Visiting Fellowship in Transcranial Magnetic Stimulation (TMS)</a></div><div class='column2'>Durham, NC, USA</div><div class='column3'> Oct. 19-21, 2019</div></div></table></li><li class="      category-four "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://psychiatricnursing.nursingconference.com/">2nd Annual Congress on Psychiatric & Mental Health Nursing</a></div><div class='column2'>Amsterdam, Netherlands</div><div class='column3'> Oct. 21-22, 2019</div></div></table></li><li class="      category-four "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://geriatricsnursing.nursingconference.com/">11th International Conference on Geriatrics Nursing & Palliative care</a></div><div class='column2'>Amsterdam, Netherlands.</div><div class='column3'> Oct. 21-22, 2019</div></div></table></li>		<li class="category-one     category-three "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromodec.com/events/london-clinical-tms-certification-course-3/">London Clinical TMS Certification Course</a></div><div class='column2'>London, UK</div><div class='column3'> Oct. 23-25, 2019</div></div></table></li><li class="category-one  category-six  category-two  category-four category-eight"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="http://www.cvent.com/events/manipulating-brain-states-invasive-mapping-and-neuromodulation-in-human-neurological-disease/event-summary-d9a10ce336fa4192b2f3fcca452ef82b.aspx">Manipulating Brain States – Invasive Mapping and Neuromodulation in Human Neurological Disease</a></div><div class='column2'>Rochester, NY, USA</div><div class='column3'> Oct. 24-26, 2019</div></div></table></li>
+
+<li class="      category-four "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="http://events.marketsandmarkets.com/5th-Annual-MarketsandMarkets-Neuroscience-RD-Technologies-Conference">5th Annual MarketsandMarkets Neuroscience R&D Technologies Conference</a></div><div class='column2'>London, UK</div><div class='column3'> Oct. 3-4, 2019</div></div></table></li>
+
+<li class="category-one  category-six category-seven category-two category-three category-four category-eight"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://www.neuromodec.com/ntsnycn2019/">2019 Neuromodulation: the Science & NYC Neuromodulation Joint Meeting</a></div><div class='column2'>Napa, CA, USA</div><div class='column3'> Oct. 3-6, 2019</div></div></table></li>		
+		
+<li class="category-one     category-three "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromodec.com/events/rtms-for-depression-ocd-and-new-developments-2-day-rtms-course-6/">rTMS for depression, OCD and new developments: 2-day rTMS course</a></div><div class='column2'>Nijmegen, Netherlands </div><div class='column3'> Oct. 3-4, 2019</div></div></table></li>
+
+<li class="  category-six    category-four "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromodec.com/events/2019-the-art-and-science-of-pain-management-conference/">2019 The Art and Science of Pain Management Conference</a></div><div class='column2'>Saratoga Springs, NY, USA</div><div class='column3'> Oct. 5, 2019</div></div></table></li>
+
+<li class="    category-two category-three  category-eight"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://www.tickettailor.com/events/schoolofneurotherapy/166772/">NeuroField Neuromodulation All-Levels Training</a></div><div class='column2'>Victoria, BC Canada</div><div class='column3'> Oct. 14-19</div></div></table></li>
+
+<li class="     category-three  category-eight"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromodec.com/events/neurofeedback-in-adhd-and-insomnia-4-day-course-4/">Neurofeedback in ADHD and insomnia: 4-day course</a></div><div class='column2'>Sydney, Australia</div><div class='column3'> Oct. 18-21, 2019</div></div></table></li>
+		
+<li class="category-one     category-three "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://psychiatry.duke.edu/transcranial-magnetic-stimulation-course">Duke Visiting Fellowship in Transcranial Magnetic Stimulation (TMS)</a></div><div class='column2'>Durham, NC, USA</div><div class='column3'> Oct. 19-21, 2019</div></div></table></li>
+
+<li class="      category-four "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://psychiatricnursing.nursingconference.com/">2nd Annual Congress on Psychiatric & Mental Health Nursing</a></div><div class='column2'>Amsterdam, Netherlands</div><div class='column3'> Oct. 21-22, 2019</div></div></table></li>
+
+<li class="      category-four "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://geriatricsnursing.nursingconference.com/">11th International Conference on Geriatrics Nursing & Palliative care</a></div><div class='column2'>Amsterdam, Netherlands.</div><div class='column3'> Oct. 21-22, 2019</div></div></table></li>
+		
+<li class="category-one     category-three "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromodec.com/events/london-clinical-tms-certification-course-3/">London Clinical TMS Certification Course</a></div><div class='column2'>London, UK</div><div class='column3'> Oct. 23-25, 2019</div></div></table></li>
+
+<li class="category-one  category-six  category-two  category-four category-eight"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="http://www.cvent.com/events/manipulating-brain-states-invasive-mapping-and-neuromodulation-in-human-neurological-disease/event-summary-d9a10ce336fa4192b2f3fcca452ef82b.aspx">Manipulating Brain States – Invasive Mapping and Neuromodulation in Human Neurological Disease</a></div><div class='column2'>Rochester, NY, USA</div><div class='column3'> Oct. 24-26, 2019</div></div></table></li>
+
 <li class="  category-six    category-four "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://www.isin2019vienna.org/">International Society of Intraoperative Neurophysiology Educational Course and Scientific Meeting 2019</a></div><div class='column2'>Vienna, Austria</div><div class='column3'> Oct. 28-Nov. 2, 2019</div></div></table></li>
-<li class="   category-one  category-six  category-seven category-two category-three category-four category-five category-eight "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="#"></a></div><div class='column2'></div><div class='column3'> </div></div></table></li>      </ul>    </section>			<section class="grid-item col-sm-6 box" id="category-one">      <ul class="results list-unstyled">        <h3>November 2019</h3><li class="      category-four "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromodec.com/events/2019-neurotech-leaders-forum-2/">2019 Neurotech Leaders Forum</a></div><div class='column2'>San Francisco, CA, USA</div><div class='column3'> Nov. 4-5, 2019</div></div></table></li><li class="    category-two category-three  "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://www.neuromodec.com/tdcs_fellowship/index.html">NYC tDCS Fellowship </a></div><div class='column2'>New York City, USA</div><div class='column3'> Nov. 4-8, 2019</div></div></table></li>
+
+<li class="   category-one  category-six  category-seven category-two category-three category-four category-five category-eight "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="#"></a></div><div class='column2'></div><div class='column3'> </div></div></table></li>
+
+      </ul>
+
+    </section>		
+
+	<section class="grid-item col-sm-6 box" id="category-one">
+
+      <ul class="results list-unstyled">
+
+        <h3>November 2019</h3>
+<li class="      category-four "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromodec.com/events/2019-neurotech-leaders-forum-2/">2019 Neurotech Leaders Forum</a></div><div class='column2'>San Francisco, CA, USA</div><div class='column3'> Nov. 4-5, 2019</div></div></table></li>
+
+<li class="    category-two category-three  "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://www.neuromodec.com/tdcs_fellowship/index.html">NYC tDCS Fellowship </a></div><div class='column2'>New York City, USA</div><div class='column3'> Nov. 4-8, 2019</div></div></table></li>
+
 <li class="category-one    category-two category-three category-four category-eight"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://tribs.ac.cn/">International Symposium on Translational Research in Brain Stimulation</a></div><div class='column2'>Shanghai, China</div><div class='column3'> Nov. 6-10, 2019</div></div></table></li>
-<li class="    category-two category-three  category-eight"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://www.tickettailor.com/events/schoolofneurotherapy/166773/">NeuroField Bootcamp</a></div><div class='column2'>Santa Barbara, CA, USA</div><div class='column3'> Nov. 5-10, 2019</div></div></table></li>		<li class="    category-two category-three "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromodec.com/events/transcranial-direct-current-stimulation-tdcs-1-day-course-3/">Transcranial direct current stimulation (tDCS): 1-day course</a></div><div class='column2'>Munich, Germany</div><div class='column3'> Nov. 13, 2019</div></div></table></li>		<li class="category-one     category-three "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromodec.com/events/rtms-for-depression-ocd-and-new-developments-2-day-rtms-course-7/">rTMS for depression, OCD and new developments: 2-day rTMS course</a></div><div class='column2'>Munich, Germany</div><div class='column3'> Nov. 14-15, 2019</div></div></table></li><li class="    category-two category-three  "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromodec.com/events/transcranial-direct-current-stimulation-tdcs-1-day-training-for-professionals/">Transcranial direct current stimulation (tDCS) 1-day course</a></div><div class='column2'>Sydney, Australia</div><div class='column3'> Nov. 15, 2019</div></div></table></li><li class="category-one    category-two category-three  category-eight"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromodec.com/events/rtms-for-depression-ocd-and-new-developments-2-day-rtms-course-8/">rTMS for depression, OCD and new developments: 2-day rTMS course</a></div><div class='column2'>Sydney, Australia</div><div class='column3'> Nov. 16-17, 2019</div></div></table></li><li class="category-one    category-two category-three category-four category-eight"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://www.congressoneuronus.com.br/">I International Conference on Neuroscience and Rehabilitation</a></div><div class='column2'>Goiânia, GO, Brazil</div><div class='column3'> Nov. 28-30, 2019</div></div></table></li>		<li class="    category-two category-three  category-eight"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://www.tickettailor.com/events/schoolofneurotherapy/166760/">NeuroField Neuromodulation Advanced Training</a></div><div class='column2'>New York, NY, USA</div><div class='column3'> Nov. 29-Dec. 1, 2019</div></div></table></li>	<li class="     category-three category-eight"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromodec.com/events/neurofeedback-in-adhd-sleep-4-day-workshop-for-professionals-bcia/">Neurofeedback in ADHD & Sleep – 4-day Workshop for Professionals (BCIA)</a></div><div class='column2'>Sydney, Australia</div><div class='column3'> Nov. 29-Dec. 2, 2019</div></div></table></li>		<li class="category-one     category-three "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://brainbox.rogue-resolutions.com/workshop/fundamentals-and-applications-of-tms-workshop/">Fundamentals and Applications of TMS Workshop</a></div><div class='column2'>London, UK</div><div class='column3'> Nov. 30-Dec. 1, 2019</div></div></table></li><li class="   category-one  category-six  category-seven category-two category-three category-four category-five category-eight "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="#"></a></div><div class='column2'></div><div class='column3'> </div></div></table></li>      </ul>    </section>				<section class="grid-item col-sm-6 box" id="category-two">      <ul class="results list-unstyled">        <h3>December 2019</h3><li class="category-one     category-three "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://brainbox.rogue-resolutions.com/workshop/tms-neuronavigation-workshop/">TMS Neuronavigation Workshop</a></div><div class='column2'>London, UK</div><div class='column3'> Dec. 2, 2019</div></div></table></li><li class="category-one     category-three "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://brainbox.rogue-resolutions.com/workshop/fundamentals-tes-workshop/">Fundamentals of tES Workshop</a></div><div class='column2'>London, UK</div><div class='column3'> Dec. 3, 2019</div></div></table></li><li class="category-one     category-three  "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://brainbox.rogue-resolutions.com/workshop/advanced-applications-tes-workshop-2/">Advanced Applications of tES Workshop</a></div><div class='column2'>London, UK</div><div class='column3'> Dec. 4, 2019</div></div></table></li><li class="  category-six    category-four"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromodec.com/events/3rd-annual-ultrasound-interventional-pain-conference/">3rd Ultrasound Interventional Pain Conference</a></div><div class='column2'>London, UK</div><div class='column3'> Dec. 6-7, 2019</div></div></table></li><li class="category-one     category-three  "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://tmscourses.nl/">TMS/EMG/Neuronavigation Course (2 days)</a></div><div class='column2'>Utrecht, the Netherlands</div><div class='column3'> Dec. 10-11, 2019</div></div></table></li><li class="   category-one  category-six  category-seven category-two category-three category-four category-five category-eight "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="#"></a></div><div class='column2'></div><div class='column3'> </div></div></table></li>      </ul>    </section>			<!-- jan  - 3 		feb - 4		mach - 5		april - 6 		may - 7		June - 8		July - 9		August - 14		September - 15 		October - 16		Nov - 10		Dec - 11-->	<section class="grid-item col-sm-6 box" id="category-three">      <ul class="results list-unstyled">        <h3>January 2020</h3><li class="category-one  category-six category-seven category-two category-three category-four category-eight"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="http://conference.neuromodulation.org/">North American Neuromodulation Society Annual Meeting</a></div><div class='column2'>Las Vegas, NV, USA</div><div class='column3'> Jan. 23-26, 2020</div></div></table></li><li class="category-one      "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromodec.com/events/duke-visiting-fellowship-in-transcranial-magnetic-stimulation-tms/">Duke Course in Transcranial Magnetic Stimulation (TMS)</a></div><div class='column2'>Durham, NC, USA</div><div class='column3'> Jan. 25-27, 2020</div></div></table></li>		<li class="   category-one  category-six  category-seven category-two category-three category-four category-five category-eight "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="#"></a></div><div class='column2'></div><div class='column3'> </div></div></table></li>      </ul>    </section>				<section class="grid-item col-sm-6 box" id="category-five">      <ul class="results list-unstyled">        <h3>March 2020</h3><li class="category-one   category-seven category-two category-three category-four category-eight"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromodec.com/events/7th-international-conference-on-non-invasive-brain-stimulation-nibs/">7th International Conference on Non-Invasive Brain Stimulation (NIBS)</a></div><div class='column2'>Baden-Baden, Germany</div><div class='column3'> Mar. 24-26, 2020</div></div></table></li><li class="category-one    category-two category-three  category-eight"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromodec.com/events/london-clinical-tms-certification-course-4/">London Clinical TMS Certification Course</a></div><div class='column2'>London, UK</div><div class='column3'> Mar. 25-27, 2020</div></div></table></li><li class="   category-one  category-six  category-seven category-two category-three category-four category-five category-eight "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="#"></a></div><div class='column2'></div><div class='column3'> </div></div></table></li>      </ul>    </section>	<section class="grid-item col-sm-6 box" id="category-six">      <ul class="results list-unstyled">        <h3>April 2020</h3><li class="category-one      "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://psychiatry.duke.edu/transcranial-magnetic-stimulation-course">Duke Course in Transcranial Magnetic Stimulation (TMS)</a></div><div class='column2'>Durham, NC, USA</div><div class='column3'> Apr. 18-20, 2020</div></div></table></li>		<li class="   category-one  category-six  category-seven category-two category-three category-four category-five category-eight "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="#"></a></div><div class='column2'></div><div class='column3'> </div></div></table></li>      </ul></section>					<section class="grid-item col-sm-6 box" id="category-seven">      <ul class="results list-unstyled">        <h3>May 2020</h3><li class="category-one    category-two category-three  category-eight"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromodec.com/events/amsterdam-clinical-tms-certification-course-2/">Amsterdam Clinical TMS Certification Course</a></div><div class='column2'>Amsterdam, Netherlands</div><div class='column3'> May 27-29, 2020</div></div></table></li><li class="   category-one  category-six  category-seven category-two category-three category-four category-five category-eight "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="#"></a></div><div class='column2'></div><div class='column3'> </div></div></table></li>      </ul>    </section>	<section class="grid-item col-sm-6 box" id="category-nine">      <ul class="results list-unstyled">        <h3>July 2020</h3>		<li class="category-one    category-two category-three  category-eight"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromodec.com/events/maastricht-clinical-tms-certification-course-3/">Maastricht Clinical TMS Certification Course</a></div><div class='column2'>Maastricht, Netherlands</div><div class='column3'> Jul. 1-3, 2020</div></div></table></li><li class="category-one      "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://psychiatry.duke.edu/transcranial-magnetic-stimulation-course">Duke Course in Transcranial Magnetic Stimulation (TMS)</a></div><div class='column2'>Durham, NC, USA</div><div class='column3'> Jul. 11-13, 2020</div></div></table></li><li class="   category-one  category-six  category-seven category-two category-three category-four category-five category-eight "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="#"></a></div><div class='column2'></div><div class='column3'> </div></div></table></li>      </ul>    </section>	<section class="grid-item col-sm-6 box" id="category-sixteen">      <ul class="results list-unstyled">        <h3>October 2020</h3><li class="category-one      "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://psychiatry.duke.edu/transcranial-magnetic-stimulation-course">Duke Course in Transcranial Magnetic Stimulation (TMS)</a></div><div class='column2'>Durham, NC, USA</div><div class='column3'> Oct. 17-19, 2020</div></div></table></li><li class="category-one    category-two category-three  category-eight"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromodec.com/events/london-clinical-tms-certification-course-5/">London Clinical TMS Certification Course</a></div><div class='column2'>London, UK</div><div class='column3'> Oct 21-23, 2020</div></div></table></li><li class="   category-one  category-six  category-seven category-two category-three category-four category-five category-eight "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="#"></a></div><div class='column2'></div><div class='column3'> </div></div></table></li>      </ul>    </section>			
-  </div>
-</div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="jquery.sticky.js"></script>
-    <script src="js/index.js"></script>
-<script>
-window.onload = function UncheckAll(){ 
-      var w = document.getElementsByTagName('input'); 
-      for(var i = 0; i < w.length; i++){ 
-        if(w[i].type=='checkbox'){ 
-          w[i].checked = false; 
-        }
-      }
-  } 
-</script> 
-</body>
-</html>
+
+<li class="    category-two category-three  category-eight"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://www.tickettailor.com/events/schoolofneurotherapy/166773/">NeuroField Bootcamp</a></div><div class='column2'>Santa Barbara, CA, USA</div><div class='column3'> Nov. 5-10, 2019</div></div></table></li>
+		
+<li class="    category-two category-three "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromodec.com/events/transcranial-direct-current-stimulation-tdcs-1-day-course-3/">Transcranial direct current stimulation (tDCS): 1-day course</a></div><div class='column2'>Munich, Germany</div><div class='column3'> Nov. 13, 2019</div></div></table></li>
+		
+<li class="category-one     category-three "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromodec.com/events/rtms-for-depression-ocd-and-new-developments-2-day-rtms-course-7/">rTMS for depression, OCD and new developments: 2-day rTMS course</a></div><div class='column2'>Munich, Germany</div><div class='column3'> Nov. 14-15, 2019</div></div></table></li>
+
+<li class="    category-two category-three  "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromodec.com/events/transcranial-direct-current-stimulation-tdcs-1-day-training-for-professionals/">Transcranial direct current stimulation (tDCS) 1-day course</a></div><div class='column2'>Sydney, Australia</div><div class='column3'> Nov. 15, 2019</div></div></table></li>
+
+<li class="category-one    category-two category-three  category-eight"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromodec.com/events/rtms-for-depression-ocd-and-new-developments-2-day-rtms-course-8/">rTMS for depression, OCD and new developments: 2-day rTMS course</a></div><div class='column2'>Sydney, Australia</div><div class='column3'> Nov. 16-17, 2019</div></div></table></li>
+
+<li class="category-one    category-two category-three category-four category-eight"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://www.congressoneuronus.com.br/">I International Conference on Neuroscience and Rehabilitation</a></div><div class='column2'>Goiânia, GO, Brazil</div><div class='column3'> Nov. 28-30, 2019</div></div></table></li>
+		
+<li class="    category-two category-three  category-eight"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://www.tickettailor.com/events/schoolofneurotherapy/166760/">NeuroField Neuromodulation Advanced Training</a></div><div class='column2'>New York, NY, USA</div><div class='column3'> Nov. 29-Dec. 1, 2019</div></div></table></li>	
+
+<li class="     category-three category-eight"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromodec.com/events/neurofeedback-in-adhd-sleep-4-day-workshop-for-professionals-bcia/">Neurofeedback in ADHD & Sleep – 4-day Workshop for Professionals (BCIA)</a></div><div class='column2'>Sydney, Australia</div><div class='column3'> Nov. 29-Dec. 2, 2019</div></div></table></li>
+		
+<li class="category-one     category-three "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://brainbox.rogue-resolutions.com/workshop/fundamentals-and-applications-of-tms-workshop/">Fundamentals and Applications of TMS Workshop</a></div><div class='column2'>London, UK</div><div class='column3'> Nov. 30-Dec. 1, 2019</div></div></table></li>
+
+<li class="   category-one  category-six  category-seven category-two category-three category-four category-five category-eight "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="#"></a></div><div class='column2'></div><div class='column3'> </div></div></table></li>
+
+      </ul>
+
+    </section>			
+
+	<section class="grid-item col-sm-6 box" id="category-two">
+
+      <ul class="results list-unstyled">
+
+        <h3>December 2019</h3>
+<li class="category-one     category-three "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://brainbox.rogue-resolutions.com/workshop/tms-neuronavigation-workshop/">TMS Neuronavigation Workshop</a></div><div class='column2'>London, UK</div><div class='column3'> Dec. 2, 2019</div></div></table></li>
+
+<li class="category-one     category-three "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://brainbox.rogue-resolutions.com/workshop/fundamentals-tes-workshop/">Fundamentals of tES Workshop</a></div><div class='column2'>London, UK</div><div class='column3'> Dec. 3, 2019</div></div></table></li>
+
+<li class="category-one     category-three  "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://brainbox.rogue-resolutions.com/workshop/advanced-applications-tes-workshop-2/">Advanced Applications of tES Workshop</a></div><div class='column2'>London, UK</div><div class='column3'> Dec. 4, 2019</div></div></table></li>
+
+<li class="  category-six    category-four"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromodec.com/events/3rd-annual-ultrasound-interventional-pain-conference/">3rd Ultrasound Interventional Pain Conference</a></div><div class='column2'>London, UK</div><div class='column3'> Dec. 6-7, 2019</div></div></table></li>
+
+<li class="category-one     category-three  "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://tmscourses.nl/">TMS/EMG/Neuronavigation Course (2 days)</a></div><div class='column2'>Utrecht, the Netherlands</div><div class='column3'> Dec. 10-11, 2019</div></div></table></li>
+
+<li class="   category-one  category-six  category-seven category-two category-three category-four category-five category-eight "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="#"></a></div><div class='column2'></div><div class='column3'> </div></div></table></li>
+
+      </ul>
+
+    </section>	
+	
+	<!-- jan  - 3 
+		feb - 4
+		mach - 5
+		april - 6 
+		may - 7
+		June - 8
+		July - 9
+		August - 14
+		September - 15 
+		October - 16
+		Nov - 10
+		Dec - 11
+-->
+
+	<section class="grid-item col-sm-6 box" id="category-three">
+
+      <ul class="results list-unstyled">
+
+        <h3>January 2020</h3>
+<li class="      category-four category-eight"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromeeting.ant-neuro.com/home">ANT Neuromeeting 2020</a></div><div class='column2'>Beaune, France</div><div class='column3'> Jan. 15-18, 2020</div></div></table></li>
+		
+<li class="category-one  category-six category-seven category-two category-three category-four category-eight"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="http://conference.neuromodulation.org/">North American Neuromodulation Society Annual Meeting</a></div><div class='column2'>Las Vegas, NV, USA</div><div class='column3'> Jan. 23-26, 2020</div></div></table></li>
+
+<li class="category-one      "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromodec.com/events/duke-visiting-fellowship-in-transcranial-magnetic-stimulation-tms/">Duke Course in Transcranial Magnetic Stimulation (TMS)</a></div><div class='column2'>Durham, NC, USA</div><div class='column3'> Jan. 25-27, 2020</div></div></table></li>
+
+<li class="category-one    category-two category-three  category-eight"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromodec.com/events/rtms-for-depression-ocd-and-new-developments-2-day-rtms-course-9/">rTMS for depression, OCD and new developments</a></div><div class='column2'>Munich, Germany</div><div class='column3'> Jan. 28-29, 2020</div></div></table></li>
+
+<li class="    category-two category-three  "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromodec.com/events/transcranial-direct-current-stimulation-tdcs-1-day-course-4/">Transcranial direct current stimulation (tDCS) 1-day course</a></div><div class='column2'>Munich, Germany</div><div class='column3'> Jan. 30, 2020</div></div></table></li>
+		
+<li class="   category-one  category-six  category-seven category-two category-three category-four category-five category-eight "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="#"></a></div><div class='column2'></div><div class='column3'> </div></div></table></li>
+
+      </ul>
+
+    </section>
+
+	<section class="grid-item col-sm-6 box" id="category-three">
+
+      <ul class="results list-unstyled">
+
+        <h3>February 2020</h3>
+<li class="category-one     category-three  "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="http://www.neurologie.uni-goettingen.de/fortbildung.html">Transcranial Magnetic and Electrical Stimulation Practical Course</a></div><div class='column2'>Göttingen, Germany</div><div class='column3'> Feb. 11-13, 2020</div></div></table></li>
+
+		
+<li class="   category-one  category-six  category-seven category-two category-three category-four category-five category-eight "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="#"></a></div><div class='column2'></div><div class='column3'> </div></div></table></li>
+
+      </ul>
+
+    </section>		
+	
+	<section class="grid-item col-sm-6 box" id="category-five">
+
+      <ul class="results list-unstyled">
+
+        <h3>March 2020</h3>
+<li class="     category-three  category-eight"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromodec.com/events/neurofeedback-in-adhd-and-insomnia-4-day-course-5/">Neurofeedback in ADHD and insomnia: 4-day course</a></div><div class='column2'>Munich, Germany</div><div class='column3'> Mar. 3-6 2020</div></div></table></li>
+		
+<li class="category-one   category-seven category-two category-three category-four category-eight"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromodec.com/events/7th-international-conference-on-non-invasive-brain-stimulation-nibs/">7th International Conference on Non-Invasive Brain Stimulation (NIBS)</a></div><div class='column2'>Baden-Baden, Germany</div><div class='column3'> Mar. 24-26, 2020</div></div></table></li>
+
+<li class="category-one    category-two category-three  category-eight"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromodec.com/events/london-clinical-tms-certification-course-4/">London Clinical TMS Certification Course</a></div><div class='column2'>London, UK</div><div class='column3'> Mar. 25-27, 2020</div></div></table></li>
+
+<li class="   category-one  category-six  category-seven category-two category-three category-four category-five category-eight "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="#"></a></div><div class='column2'></div><div class='column3'> </div></div></table></li>
+
+      </ul>
+
+    </section>	
+
+<section class="grid-item col-sm-6 box" id="category-six">
+
+      <ul class="results list-unstyled">
+
+        <h3>April 2020</h3>
+
+<li class="category-one      "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://psychiatry.duke.edu/transcranial-magnetic-stimulation-course">Duke Course in Transcranial Magnetic Stimulation (TMS)</a></div><div class='column2'>Durham, NC, USA</div><div class='column3'> Apr. 18-20, 2020</div></div></table></li>
+
+<li class="    category-two category-three  "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromodec.com/events/transcranial-direct-current-stimulation-tdcs-1-day-course-5/">Transcranial direct current stimulation (tDCS) 1-day course</a></div><div class='column2'>Munich, Germany</div><div class='column3'> Apr. 28, 2020</div></div></table></li>
+
+<li class="category-one    category-two category-three  category-eight"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromodec.com/events/rtms-for-depression-ocd-and-new-developments-2-day-rtms-course-10/">rTMS for depression, OCD and new developments</a></div><div class='column2'>Munich, Germany</div><div class='column3'> Apr. 29-30, 2020</div></div></table></li>
+		
+<li class="   category-one  category-six  category-seven category-two category-three category-four category-five category-eight "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="#"></a></div><div class='column2'></div><div class='column3'> </div></div></table></li>
+
+      </ul>
+
+</section>			
+	
+	<section class="grid-item col-sm-6 box" id="category-seven">
+
+      <ul class="results list-unstyled">
+
+        <h3>May 2020</h3>
+<li class="category-one    category-two category-three category-four category-eight"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://www.neurostimcarolina.org/">Carolina Neurostimulation Conference (CNC)</a></div><div class='column2'>Chapel Hill, NC, USA</div><div class='column3'> May 12-14, 2020</div></div></table></li>
+
+<li class="category-one     category-three category-four "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromodec.com/events/clinical-tms-society-8th-annual-meeting/">Clinical TMS Society 8th Annual Meeting</a></div><div class='column2'>Chicago, IL, USA</div><div class='column3'> May 14-16, 2020</div></div></table></li>
+
+<li class="category-one    category-two category-three  category-eight"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromodec.com/events/8th-science-factory-tms-eeg-summer-school-and-workshop/">8th Science Factory: TMS–EEG Summer School and Workshop</a></div><div class='column2'>Espoo, Finland</div><div class='column3'> May 15-20, 2020</div></div></table></li>
+
+<li class="category-one    category-two  category-four category-eight"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromodec.com/events/the-6th-annual-brain-stimulation-and-imaging-meeting/">The 6th Annual Brain Stimulation and Imaging Meeting (BrainSTIM 2020)</a></div><div class='column2'>Espoo, Finland</div><div class='column3'> May 20-21, 2020</div></div></table></li>
+
+<li class="category-one    category-two category-three  category-eight"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromodec.com/events/amsterdam-clinical-tms-certification-course-2/">Amsterdam Clinical TMS Certification Course</a></div><div class='column2'>Amsterdam, Netherlands</div><div class='column3'> May 27-29, 2020</div></div></table></li>
+
+<li class="   category-one  category-six  category-seven category-two category-three category-four category-five category-eight "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="#"></a></div><div class='column2'></div><div class='column3'> </div></div></table></li>
+
+      </ul>
+
+    </section>
+
+	<section class="grid-item col-sm-6 box" id="category-eight">
+
+      <ul class="results list-unstyled">
+
+        <h3>June 2020</h3>
+		
+<li class="     category-three  category-eight"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromodec.com/events/neurofeedback-in-adhd-and-insomnia-4-day-course-6/">Neurofeedback in ADHD and insomnia: 4-day course</a></div><div class='column2'>Munich, Germany</div><div class='column3'> Jun. 23-26, 2020</div></div></table></li>
+
+
+<li class="   category-one  category-six  category-seven category-two category-three category-four category-five category-eight "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="#"></a></div><div class='column2'></div><div class='column3'> </div></div></table></li>
+
+      </ul>
+
+    </section>
+	
+	<section class="grid-item col-sm-6 box" id="category-nine">
+
+      <ul class="results list-unstyled">
+
+        <h3>July 2020</h3>
+		
+<li class="category-one    category-two category-three  category-eight"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromodec.com/events/maastricht-clinical-tms-certification-course-3/">Maastricht Clinical TMS Certification Course</a></div><div class='column2'>Maastricht, Netherlands</div><div class='column3'> Jul. 1-3, 2020</div></div></table></li>
+
+<li class="category-one      "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://psychiatry.duke.edu/transcranial-magnetic-stimulation-course">Duke Course in Transcranial Magnetic Stimulation (TMS)</a></div><div class='column2'>Durham, NC, USA</div><div class='column3'> Jul. 11-13, 2020</div></div></table></li>
+
+<li class="   category-one  category-six  category-seven category-two category-three category-four category-five category-eight "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="#"></a></div><div class='column2'></div><div class='column3'> </div></div></table></li>
+
+      </ul>
+
+    </section>
+	
+	<section class="grid-item col-sm-6 box" id="category-fifteen">
+
+      <ul class="results list-unstyled">
+
+        <h3>September 2020</h3>
+		
+<li class="      category-four category-eight"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromodec.com/events/the-international-neuroergonomics-conference-2020/">International Neuroergonomics Conference 2020</a></div><div class='column2'>Munich, Germany</div><div class='column3'> Sep. 8-11, 2020</div></div></table></li>
+
+
+<li class="   category-one  category-six  category-seven category-two category-three category-four category-five category-eight "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="#"></a></div><div class='column2'></div><div class='column3'> </div></div></table></li>
+
+      </ul>
+
+    </section>
+
+	<section class="grid-item col-sm-6 box" id="category-sixteen">
+
+      <ul class="results list-unstyled">
+
+        <h3>October 2020</h3>
+<li class="category-one      "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://psychiatry.duke.edu/transcranial-magnetic-stimulation-course">Duke Course in Transcranial Magnetic Stimulation (TMS)</a></div><div class='column2'>Durham, NC, USA</div><div class='column3'> Oct. 17-19, 2020</div></div></table></li>
+
+<li class="category-one    category-two category-three  category-eight"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromodec.com/events/london-clinical-tms-certification-course-5/">London Clinical TMS Certification Course</a></div><div class='column2'>London, UK</div><div class='column3'> Oct 21-23, 2020</div></div></table></li>
+
+<li class="   category-one  category-six  category-seven category-two category-three category-four category-five category-eight "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="#"></a></div><div class='column2'></div><div class='column3'> </div></div></table></li>
+
+      </ul>
+
+    </section>		
+	
+	<section class="grid-item col-sm-6 box" id="category-twelve">
+
+      <ul class="results list-unstyled">
+
+        <h3>February 2021</h3>
+<li class="category-one  category-six category-seven category-two category-three category-four category-eight"><table><div class="table_div" ><div class="column1" ><a target="_parent" href="https://neuromodec.com/events/4th-international-brain-stimulation-conference/">4th International Brain Stimulation Conference</a></div><div class='column2'>Kyoto, Japan</div><div class='column3'> Feb. 28-Mar. 3, 2021</div></div></table></li>
+
+<li class="   category-one  category-six  category-seven category-two category-three category-four category-five category-eight "><table><div class="table_div" ><div class="column1" ><a target="_parent" href="#"></a></div><div class='column2'></div><div class='column3'> </div></div></table></li>
+
+      </ul>
+
+    </section>	
+
+	
+  </div>
+
+</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="jquery.sticky.js"></script>
+
+    <script src="js/index.js"></script>
+
+<script>
+
+window.onload = function UncheckAll(){ 
+
+      var w = document.getElementsByTagName('input'); 
+
+      for(var i = 0; i < w.length; i++){ 
+
+        if(w[i].type=='checkbox'){ 
+
+          w[i].checked = false; 
+
+        }
+
+      }
+
+  } 
+
+</script> 
+
+</body>
+
+</html>
+
